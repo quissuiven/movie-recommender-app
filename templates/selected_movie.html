@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylefirst.css') }}">
+</head>
+
+<body>
+  <h1>{{movie_title}}</h2>
+  <h2>Actors: {{movie_actor_name}} </h2>
+  <img src= {{movie_image}} width="450" height="350" vertical-align="middle">
+  <p>{{movie_overview}}</p>
+
+  <h2>Similar Movies: </h2>
+  <div class="row">
+    <div class="column">
+      <form method="post" action="{{ url_for('show_movie') }}">
+        <input type="hidden" name = "selected_movieid" value="{{ first_rec_title_id }}">
+        <input type="image" img class="article-img" src = {{first_rec_image}} width = "200" height = "200" alt="Submit">
+      </form>
+    </div>
+    <div class="column">
+      <form method="post" action="{{ url_for('show_movie') }}">
+        <input type="hidden" name = "selected_movieid" value="{{ second_rec_title_id }}">
+        <input type="image" img class="article-img" src = {{second_rec_image}} width = "200" height = "200" alt="Submit">
+      </form>
+    </div>
+    <div class="column">
+      <form method="post" action="{{ url_for('show_movie') }}">
+        <input type="hidden" name = "selected_movieid" value="{{ third_rec_title_id }}">
+        <input type="image" img class="article-img" src = {{third_rec_image}} width = "200" height = "200" alt="Submit">
+      </form>
+    </div>
+    <div class="column">
+      <form method="post" action="{{ url_for('show_movie') }}">
+        <input type="hidden" name = "selected_movieid" value="{{ fourth_rec_title_id }}">
+        <input type="image" img class="article-img" src = {{fourth_rec_image}} width = "200" height = "200" alt="Submit">
+      </form>
+    </div>
+    <div class="column">
+      <form method="post" action="{{ url_for('show_movie') }}">
+        <input type="hidden" name = "selected_movieid" value="{{ fifth_rec_title_id }}">
+        <input type="image" img class="article-img" src = {{fifth_rec_image}} width = "200" height = "200" alt="Submit">
+      </form>
+    </div>
+  </div>
+
+
+</body>

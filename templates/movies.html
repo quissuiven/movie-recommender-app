@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Top movies </title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylefirst.css') }}">
+</head>
+
+<body>
+  <h1>{{ movie1_title }}</h1>
+  <h3>Genres: {{movie1_genres}} </h3>
+  <h3>Rating: {{movie1_averageRating}} </h3>
+  <form method="post" action="{{ url_for('show_movie') }}">
+    <input type="hidden" name = "selected_movieid" value="{{ movie1_titleid }}">
+    <input type="image" img class="article-img" src = {{movie1_image}} alt="Submit">
+  </form>
+  <h1>{{ movie2_title }}</h1>
+  <h3>Genres: {{movie2_genres}}</h3>
+  <h3>Rating: {{movie2_averageRating}} </h3>
+  <form method="post" action="{{ url_for('show_movie') }}">
+    <input type="hidden" name = "selected_movieid" value="{{ movie2_titleid }}">
+    <input type="image" img class="article-img" src = {{movie2_image}} alt="Submit">
+  </form>
+  <h1>{{ movie3_title }}</h1>
+  <h3>Genres: {{movie3_genres}}</h3>
+  <h3>Rating: {{movie3_averageRating}} </h3>
+  <form method="post" action="{{ url_for('show_movie') }}">
+    <input type="hidden" name = "selected_movieid" value="{{ movie3_titleid }}">
+    <input type="image" img class="article-img" src = {{movie3_image}} alt="Submit">
+  </form>
+</body>

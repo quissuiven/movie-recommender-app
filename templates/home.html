@@ -1,0 +1,60 @@
+
+<form method="post" action="{{ url_for('create_users') }}">
+  <fieldset>
+      <legend>What is your name?</legend>
+      <input type="text" name="name" value=""><br>
+      <br>
+      <legend>What type of show are you looking for?</legend>
+      <input type="checkbox" name="movie_type" value="movie">
+      <label for="movie_type">Movie</label><br>
+      <input type="checkbox" name="movie_type" value="tvSeries">
+      <label for="movie_type">TV Drama Series </label><br>
+      <br>
+      <legend>What are your favourite movie genres?</legend>
+      <input type="checkbox" name="genre" value="Action & Adventure">
+      <label for="genre">Action and Adventure </label><br>
+      <input type="checkbox" name="genre" value="Animation">
+      <label for="genre">Animation </label><br>
+      <input type="checkbox" name="genre" value="Family">
+      <label for="genre">Family </label><br>
+      <input type="checkbox" name="genre" value="Comedy">
+      <label for="genre">Comedy</label><br>
+      <input type="checkbox" name="genre" value="Documentary">
+      <label for="genre">Documentary</label><br>
+      <input type="checkbox" name="genre" value="Drama">
+      <label for="genre">Drama</label><br>
+      <input type="checkbox" name="genre" value="Horror">
+      <label for="genre">Horror</label><br>
+      <input type="checkbox" name="genre" value="Music">
+      <label for="genre">Music</label><br>
+      <input type="checkbox" name="genre" value="Romance">
+      <label for="genre">Romance</label><br>
+      <input type="checkbox" name="genre" value="Sci-Fi & Fantasy">
+      <label for="genre">Sci-Fi & Fantasy</label><br>
+      <input type="checkbox" name="genre" value="Sport">
+      <label for="genre">Sport</label><br>
+      <input type="checkbox" name="genre" value="Thriller">
+      <label for="genre">Thriller</label><br>
+      <input type="checkbox" name="genre" value="Reality TV and Talk shows">
+      <label for="genre">Reality TV and Talk shows</label><br>
+      <br>
+      <legend>In terms of nationality, which shows do you like to watch?</legend>
+      <input type="checkbox" name="nationality" value="US">
+      <label for="nationality">American shows</label><br>
+      <input type="checkbox" name="nationality" value="GB">
+      <label for="nationality">British shows </label><br>
+      <input type="checkbox" name="nationality" value="KR">
+      <label for="nationality">Korean shows </label><br>
+      <input type="checkbox" name="nationality" value="TW">
+      <label for="nationality">Taiwanese shows</label><br>
+      <input type="checkbox" name="nationality" value="CN">
+      <label for="nationality">Chinese shows </label><br>
+      <input type="checkbox" name="nationality" value="HK">
+      <label for="nationality">Hong Kong shows </label><br>
+      <br>
+      <legend>Lastly, what is your email? We will send you relevant recommendations from time to time.</legend>
+      <input type="email" name="email" value="eg. jane@gmail.com">
+      <br>
+      <input type="submit" value="Submit now" />
+  </fieldset>
+</form>
